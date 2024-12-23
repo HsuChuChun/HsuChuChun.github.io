@@ -1,0 +1,624 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/javascript">
+          window.MathJax = ({"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"options":{},"loader":{}});
+        </script>
+        <script type="text/javascript" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" charset="UTF-8"></script>
+        
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="許竹君-resume">許竹君 Resume</h1>
+<p>
+</p><div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#許竹君-resume" class="md-toc-link"><p>許竹君 Resume</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetsusersvg-width3-簡介" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gU3ZnIFZlY3RvciBJY29ucyA6IGh0dHA6Ly93d3cub25saW5ld2ViZm9udHMuY29tL2ljb24gLS0+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8bWV0YWRhdGE+IFN2ZyBWZWN0b3IgSWNvbnMgOiBodHRwOi8vd3d3Lm9ubGluZXdlYmZvbnRzLmNvbS9pY29uIDwvbWV0YWRhdGE+DQo8Zz48Zz48Zz48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTE3LjYsMTEuNWMtMjUuMiwzLjktNDEsMjIuNi00Myw1MC43Yy0wLjQsNC41LTAuNCw0LjgtMS45LDUuN2MtNi4xLDQtNy40LDE3LjMtMi42LDI3LjFjMS42LDMuMyw1LjIsNi43LDcuNiw3LjFjMS42LDAuMywxLjksMC42LDIuNCwyLjVjOC4xLDMxLjIsMTguMiw0NC40LDM3LjQsNDguN2M1LjUsMS4yLDE2LjgsMS4xLDIyLjEtMC4zYzE2LjYtNC4zLDI2LjgtMTcuNSwzNC4zLTQzLjlsMi03aDIuNGM2LjIsMC4xLDExLjEtNy44LDExLjYtMTguNmMwLjQtOC4zLTEuNy0xNC4xLTUuNy0xNmMtMS44LTAuOC0xLjgtMS0xLjgtMy42YzAtMy45LTAuOS0xMC0yLjEtMTQuOGMtNS0xOS4xLTE4LjktMzIuNi0zNy43LTM2LjhDMTM3LjgsMTEuMiwxMjIuMiwxMC43LDExNy42LDExLjV6Ii8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTE3MC4zLDE2My40Yy00LjUsMS40LTUuNSwyLjgtMjMsMzIuOWMtOSwxNS42LTE2LjksMjktMTcuNSwyOS43Yy0xLjIsMS43LTEuOCwxLjgtMy4yLDAuM2MtMC42LTAuNi04LjYtMTMuOC0xNy44LTI5LjJjLTExLjQtMTkuMi0xNy4zLTI4LjctMTguNy0yOS45Yy0zLTIuOC01LjMtMy44LTguOS0zLjdjLTIuNywwLTMuOCwwLjUtOS41LDMuNGMtNi43LDMuNS0xMy4zLDYtMjUuNyw5LjljLTE4LjMsNS43LTI4LDEyLjItMzIuNywyMS44Yy0yLjksNS44LTMuNCw5LjEtMy40LDIyLjljMCwxMy41LDAuMywxNS4yLDMuNCwxOC43YzEsMS4xLDIuOSwyLjcsNC40LDMuNGwyLjcsMS4zSDEyOGgxMDcuNmwyLjctMS4zYzMtMS41LDUuNC00LDYuOC03YzAuOC0xLjgsMS0zLjYsMS0xNC45YzAtMTEuMS0wLjItMTMuMy0xLTE2LjhjLTEuOS03LjctNi40LTEzLjktMTMuMy0xOC40Yy01LjctMy44LTEyLjItNi41LTI3LjgtMTEuNWMtNy41LTIuNC0xNi4zLTYuMS0yMi41LTkuNEMxNzYuNiwxNjIuOSwxNzMuOCwxNjIuMywxNzAuMywxNjMuNHoiLz48L2c+PC9nPjwvZz4NCjwvc3ZnPg==" width="3%"> 簡介</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetsinfo-circle-solidsvg-width3-關於我" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJpbmZvLWNpcmNsZSIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWluZm8tY2lyY2xlIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMjU2IDhDMTE5LjA0MyA4IDggMTE5LjA4MyA4IDI1NmMwIDEzNi45OTcgMTExLjA0MyAyNDggMjQ4IDI0OHMyNDgtMTExLjAwMyAyNDgtMjQ4QzUwNCAxMTkuMDgzIDM5Mi45NTcgOCAyNTYgOHptMCAxMTBjMjMuMTk2IDAgNDIgMTguODA0IDQyIDQycy0xOC44MDQgNDItNDIgNDItNDItMTguODA0LTQyLTQyIDE4LjgwNC00MiA0Mi00MnptNTYgMjU0YzAgNi42MjctNS4zNzMgMTItMTIgMTJoLTg4Yy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDEydi02NGgtMTJjLTYuNjI3IDAtMTItNS4zNzMtMTItMTJ2LTI0YzAtNi42MjcgNS4zNzMtMTIgMTItMTJoNjRjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYxMDBoMTJjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYyNHoiPjwvcGF0aD48L3N2Zz4=" width="3%"> 關於我</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#img-srcassetsbriefcase-solidsvg-width3-工作經驗" class="md-toc-link"><p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJicmllZmNhc2UiIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1icmllZmNhc2UgZmEtdy0xNiIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zMjAgMzM2YzAgOC44NC03LjE2IDE2LTE2IDE2aC05NmMtOC44NCAwLTE2LTcuMTYtMTYtMTZ2LTQ4SDB2MTQ0YzAgMjUuNiAyMi40IDQ4IDQ4IDQ4aDQxNmMyNS42IDAgNDgtMjIuNCA0OC00OFYyODhIMzIwdjQ4em0xNDQtMjA4aC04MFY4MGMwLTI1LjYtMjIuNC00OC00OC00OEgxNzZjLTI1LjYgMC00OCAyMi40LTQ4IDQ4djQ4SDQ4Yy0yNS42IDAtNDggMjIuNC00OCA0OHY4MGg1MTJ2LTgwYzAtMjUuNi0yMi40LTQ4LTQ4LTQ4em0tMTQ0IDBIMTkyVjk2aDEyOHYzMnoiPjwvcGF0aD48L3N2Zz4=" width="3%"> 工作經驗</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師" class="md-toc-link"><p>【統一綜合證券股份有限公司 - 資深專案襄理】C#、Angular 全端網站工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#仍在職2-年-6-個月-" class="md-toc-link">
+            <p>2022/06 ~ 仍在職，2 年 6 個月 +</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師" class="md-toc-link"><p>【玉山綜合證券股份有限公司 - 資訊處交易組資深工程師】C# 系統維運工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#年-2-個月" class="md-toc-link">
+            <p>2020/04 ~ 2022/05，2 年 2 個月</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師" class="md-toc-link"><p>【奇唯科技股份有限公司（精誠） - 主任程式設計師】C# 全端軟體工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#年-9-個月" class="md-toc-link">
+            <p>2015/08 ~ 2020/04，4 年 9 個月</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#img-srcassetsproject-diagram-solidsvg-width3-專案經歷" class="md-toc-link"><p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJwcm9qZWN0LWRpYWdyYW0iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1wcm9qZWN0LWRpYWdyYW0gZmEtdy0yMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zODQgMzIwSDI1NmMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzNTJjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnpNMTkyIDMyYzAtMTcuNjctMTQuMzMtMzItMzItMzJIMzJDMTQuMzMgMCAwIDE0LjMzIDAgMzJ2MTI4YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoOTUuNzJsNzMuMTYgMTI4LjA0QzIxMS45OCAzMDAuOTggMjMyLjQgMjg4IDI1NiAyODhoLjI4TDE5MiAxNzUuNTFWMTI4aDIyNFY2NEgxOTJWMzJ6TTYwOCAwSDQ4MGMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzMmMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg==" width="3%"> 專案經歷</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師-1" class="md-toc-link"><p>【統一綜合證券股份有限公司 - 資深專案襄理】C#、Angular 全端網站工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師-1" class="md-toc-link"><p>【玉山綜合證券股份有限公司 - 資訊處交易組資深工程師】C# 系統維運工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程-1" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖-1" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師-1" class="md-toc-link"><p>【奇唯科技股份有限公司（精誠） - 主任程式設計師】C# 全端軟體工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程-2" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖-2" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetstools-solidsvg-width3-技能清單" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJ0b29scyIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXRvb2xzIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTAxLjEgMzk1LjdMMzg0IDI3OC42Yy0yMy4xLTIzLjEtNTcuNi0yNy42LTg1LjQtMTMuOUwxOTIgMTU4LjFWOTZMNjQgMCAwIDY0bDk2IDEyOGg2Mi4xbDEwNi42IDEwNi42Yy0xMy42IDI3LjgtOS4yIDYyLjMgMTMuOSA4NS40bDExNy4xIDExNy4xYzE0LjYgMTQuNiAzOC4yIDE0LjYgNTIuNyAwbDUyLjctNTIuN2MxNC41LTE0LjYgMTQuNS0zOC4yIDAtNTIuN3pNMzMxLjcgMjI1YzI4LjMgMCA1NC45IDExIDc0LjkgMzFsMTkuNCAxOS40YzE1LjgtNi45IDMwLjgtMTYuNSA0My44LTI5LjUgMzcuMS0zNy4xIDQ5LjctODkuMyAzNy45LTEzNi43LTIuMi05LTEzLjUtMTIuMS0yMC4xLTUuNWwtNzQuNCA3NC40LTY3LjktMTEuM0wzMzQgOTguOWw3NC40LTc0LjRjNi42LTYuNiAzLjQtMTcuOS01LjctMjAuMi00Ny40LTExLjctOTkuNi45LTEzNi42IDM3LjktMjguNSAyOC41LTQxLjkgNjYuMS00MS4yIDEwMy42bDgyLjEgODIuMWM4LjEtMS45IDE2LjUtMi45IDI0LjctMi45em0tMTAzLjkgODJsLTU2LjctNTYuN0wxOC43IDQwMi44Yy0yNSAyNS0yNSA2NS41IDAgOTAuNXM2NS41IDI1IDkwLjUgMGwxMjMuNi0xMjMuNmMtNy42LTE5LjktOS45LTQxLjYtNS02Mi43ek02NCA0NzJjLTEzLjIgMC0yNC0xMC44LTI0LTI0IDAtMTMuMyAxMC43LTI0IDI0LTI0czI0IDEwLjcgMjQgMjRjMCAxMy4yLTEwLjcgMjQtMjQgMjR6Ij48L3BhdGg+PC9zdmc+" width="3%"> 技能清單</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+<p></p>
+<h2 id="img-srcassetsusersvg-width3-簡介"><img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gU3ZnIFZlY3RvciBJY29ucyA6IGh0dHA6Ly93d3cub25saW5ld2ViZm9udHMuY29tL2ljb24gLS0+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8bWV0YWRhdGE+IFN2ZyBWZWN0b3IgSWNvbnMgOiBodHRwOi8vd3d3Lm9ubGluZXdlYmZvbnRzLmNvbS9pY29uIDwvbWV0YWRhdGE+DQo8Zz48Zz48Zz48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTE3LjYsMTEuNWMtMjUuMiwzLjktNDEsMjIuNi00Myw1MC43Yy0wLjQsNC41LTAuNCw0LjgtMS45LDUuN2MtNi4xLDQtNy40LDE3LjMtMi42LDI3LjFjMS42LDMuMyw1LjIsNi43LDcuNiw3LjFjMS42LDAuMywxLjksMC42LDIuNCwyLjVjOC4xLDMxLjIsMTguMiw0NC40LDM3LjQsNDguN2M1LjUsMS4yLDE2LjgsMS4xLDIyLjEtMC4zYzE2LjYtNC4zLDI2LjgtMTcuNSwzNC4zLTQzLjlsMi03aDIuNGM2LjIsMC4xLDExLjEtNy44LDExLjYtMTguNmMwLjQtOC4zLTEuNy0xNC4xLTUuNy0xNmMtMS44LTAuOC0xLjgtMS0xLjgtMy42YzAtMy45LTAuOS0xMC0yLjEtMTQuOGMtNS0xOS4xLTE4LjktMzIuNi0zNy43LTM2LjhDMTM3LjgsMTEuMiwxMjIuMiwxMC43LDExNy42LDExLjV6Ii8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTE3MC4zLDE2My40Yy00LjUsMS40LTUuNSwyLjgtMjMsMzIuOWMtOSwxNS42LTE2LjksMjktMTcuNSwyOS43Yy0xLjIsMS43LTEuOCwxLjgtMy4yLDAuM2MtMC42LTAuNi04LjYtMTMuOC0xNy44LTI5LjJjLTExLjQtMTkuMi0xNy4zLTI4LjctMTguNy0yOS45Yy0zLTIuOC01LjMtMy44LTguOS0zLjdjLTIuNywwLTMuOCwwLjUtOS41LDMuNGMtNi43LDMuNS0xMy4zLDYtMjUuNyw5LjljLTE4LjMsNS43LTI4LDEyLjItMzIuNywyMS44Yy0yLjksNS44LTMuNCw5LjEtMy40LDIyLjljMCwxMy41LDAuMywxNS4yLDMuNCwxOC43YzEsMS4xLDIuOSwyLjcsNC40LDMuNGwyLjcsMS4zSDEyOGgxMDcuNmwyLjctMS4zYzMtMS41LDUuNC00LDYuOC03YzAuOC0xLjgsMS0zLjYsMS0xNC45YzAtMTEuMS0wLjItMTMuMy0xLTE2LjhjLTEuOS03LjctNi40LTEzLjktMTMuMy0xOC40Yy01LjctMy44LTEyLjItNi41LTI3LjgtMTEuNWMtNy41LTIuNC0xNi4zLTYuMS0yMi41LTkuNEMxNzYuNiwxNjIuOSwxNzMuOCwxNjIuMywxNzAuMywxNjMuNHoiLz48L2c+PC9nPjwvZz4NCjwvc3ZnPg==" width="3%">
+簡介</h2>
+<table>
+<tbody><tr>
+<td colspan="2" style="border:none">
+<h2 style="margin:0rem; color:blue">
+許竹君<label style="font-size:16px">（現任於 統一證券
+資深專案襄理）</label>
+</h2>
+<blockquote>
+<u>近 10
+年軟體工程師資歷，包含需求梳理、系統分析、程式開發、維運監控</u>，工作秉持著「Working
+harder is good, but working smarter is
+better」的態度，不只把事情做完、做好、還能做到舉一反三！
+</blockquote></td>
+<td rowspan="3" style="border:none; text-align:center">
+<img src="assets/me.jpg" width="60%">
+</td>
+</tr><tr>
+</tr><tr>
+<td colspan="2" style="border:none">
+<center>
+<span> <span> <img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJwaG9uZSIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXBob25lIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNDkzLjQgMjQuNmwtMTA0LTI0Yy0xMS4zLTIuNi0yMi45IDMuMy0yNy41IDEzLjlsLTQ4IDExMmMtNC4yIDkuOC0xLjQgMjEuMyA2LjkgMjhsNjAuNiA0OS42Yy0zNiA3Ni43LTk4LjkgMTQwLjUtMTc3LjIgMTc3LjJsLTQ5LjYtNjAuNmMtNi44LTguMy0xOC4yLTExLjEtMjgtNi45bC0xMTIgNDhDMy45IDM2Ni41LTIgMzc4LjEuNiAzODkuNGwyNCAxMDRDMjcuMSA1MDQuMiAzNi43IDUxMiA0OCA1MTJjMjU2LjEgMCA0NjQtMjA3LjUgNDY0LTQ2NCAwLTExLjItNy43LTIwLjktMTguNi0yMy40eiI+PC9wYXRoPjwvc3ZnPg==" width="5%">
+<a href="tel:0958708550">0958708550</a> </span> &nbsp; <span>
+<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJlbnZlbG9wZSIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWVudmVsb3BlIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTAyLjMgMTkwLjhjMy45LTMuMSA5LjctLjIgOS43IDQuN1Y0MDBjMCAyNi41LTIxLjUgNDgtNDggNDhINDhjLTI2LjUgMC00OC0yMS41LTQ4LTQ4VjE5NS42YzAtNSA1LjctNy44IDkuNy00LjcgMjIuNCAxNy40IDUyLjEgMzkuNSAxNTQuMSAxMTMuNiAyMS4xIDE1LjQgNTYuNyA0Ny44IDkyLjIgNDcuNiAzNS43LjMgNzItMzIuOCA5Mi4zLTQ3LjYgMTAyLTc0LjEgMTMxLjYtOTYuMyAxNTQtMTEzLjd6TTI1NiAzMjBjMjMuMi40IDU2LjYtMjkuMiA3My40LTQxLjQgMTMyLjctOTYuMyAxNDIuOC0xMDQuNyAxNzMuNC0xMjguNyA1LjgtNC41IDkuMi0xMS41IDkuMi0xOC45di0xOWMwLTI2LjUtMjEuNS00OC00OC00OEg0OEMyMS41IDY0IDAgODUuNSAwIDExMnYxOWMwIDcuNCAzLjQgMTQuMyA5LjIgMTguOSAzMC42IDIzLjkgNDAuNyAzMi40IDE3My40IDEyOC43IDE2LjggMTIuMiA1MC4yIDQxLjggNzMuNCA0MS40eiI+PC9wYXRoPjwvc3ZnPg==" width="5%">
+<a href="mailto:hsuchuchun0624@gmail.com">hsuchuchun0624@gmail.com</a>
+</span> <span> <img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAyQzE3LjUxNDEgMiAyMiA1LjY0MDUgMjIgMTAuMTE1MkMyMiAxMS45MDU5IDIxLjMwNTYgMTMuNTE4OSAxOS44NTY1IDE1LjEwODNIMTkuODU2OUMxNy43NTg5IDE3LjUyMjkgMTMuMDY3MyAyMC40NjQyIDEyIDIwLjkxNEMxMC45NjIyIDIxLjM1MTMgMTEuMDgyNCAyMC42NjcyIDExLjEyOTkgMjAuMzk2OUMxMS4xMzEyIDIwLjM4OTIgMTEuMTMyNSAyMC4zODE5IDExLjEzMzcgMjAuMzc0OUMxMS4xNTkyIDIwLjIyNDUgMTEuMjc2NSAxOS41MTg4IDExLjI3NjUgMTkuNTE4OEMxMS4zMTAxIDE5LjI2MzQgMTEuMzQ1IDE4Ljg2NzMgMTEuMjQ0MSAxOC42MTQ2QzExLjEzMjEgMTguMzM2MyAxMC42ODg4IDE4LjE5MTggMTAuMzYzMiAxOC4xMjE0QzUuNTU3NTUgMTcuNDg2NCAyIDE0LjEyNjcgMiAxMC4xMTUyQzIgNS42NDA1IDYuNDg2MzMgMiAxMiAyWk05Ljk3MjE4IDcuOTUyODFIOS4yNjMxQzkuMTU3NjYgNy45NTI4MSA5LjA3MjA4IDguMDM4MzkgOS4wNzIwOCA4LjE0Mzc0VjEyLjUwOEM5LjA3MjA4IDEyLjYxMzUgOS4xNTc2NiAxMi42OTkgOS4yNjMxIDEyLjY5OUg5Ljk3MjE4QzEwLjA3NzcgMTIuNjk5IDEwLjE2MzEgMTIuNjEzNSAxMC4xNjMxIDEyLjUwOFY4LjE0Mzc0QzEwLjE2MzEgOC4wMzgzOSAxMC4wNzc3IDcuOTUyODEgOS45NzIxOCA3Ljk1MjgxWk04LjQ3MTg0IDEyLjUwOEM4LjQ3MTg0IDEyLjYxMzUgOC4zODYzNiAxMi42OTg5IDguMjgwOTEgMTIuNjk4OUg1LjQ3MTQyQzUuMzY1OTggMTIuNjk4OSA1LjI4MDUgMTIuNjEzNSA1LjI4MDUgMTIuNTA4VjguMTQzODFDNS4yODA1IDguMDM4MzYgNS4zNjU5OCA3Ljk1Mjg4IDUuNDcxNDIgNy45NTI4OEg2LjE4MDY5QzYuMjg1NjYgNy45NTI4OCA2LjM3MTUyIDguMDM4NzQgNi4zNzE1MiA4LjE0MzgxVjExLjYwNzlIOC4yODA5MUM4LjM4NTg5IDExLjYwNzkgOC40NzE4NCAxMS42OTM4IDguNDcxODQgMTEuNzk4N1YxMi41MDhaTTE1Ljg2MzcgMTIuNjk4OUgxOC42NzMyQzE4Ljc3ODcgMTIuNjk4OSAxOC44NjQxIDEyLjYxMzUgMTguODY0MSAxMi41MDhWMTEuNzk4N0MxOC44NjQxIDExLjY5MzggMTguNzc4MiAxMS42MDc5IDE4LjY3MzIgMTEuNjA3OUgxNi43NjM5VjEwLjg3MTVIMTguNjczMkMxOC43Nzg3IDEwLjg3MTUgMTguODY0MSAxMC43ODYgMTguODY0MSAxMC42ODA1VjkuOTcxMjhDMTguODY0MSA5Ljg2NjMgMTguNzc4MiA5Ljc4MDM1IDE4LjY3MzIgOS43ODAzNUgxNi43NjM5VjkuMDQzOUgxOC42NzMyQzE4Ljc3ODcgOS4wNDM5IDE4Ljg2NDEgOC45NTg0MiAxOC44NjQxIDguODUyOTdWOC4xNDM4MUMxOC44NjQxIDguMDM4NzQgMTguNzc4MiA3Ljk1Mjg4IDE4LjY3MzIgNy45NTI4OEgxNS44NjM3QzE1Ljc1ODMgNy45NTI4OCAxNS42NzI4IDguMDM4MzYgMTUuNjcyOCA4LjE0MzgxVjEyLjUwOEMxNS42NzI4IDEyLjYxMzUgMTUuNzU4MyAxMi42OTg5IDE1Ljg2MzcgMTIuNjk4OVpNMTQuMDkxIDcuOTUyODFIMTQuODAwMUMxNC45MDU2IDcuOTUyODEgMTQuOTkxMSA4LjAzODM5IDE0Ljk5MTEgOC4xNDM3NFYxMi41MDhDMTQuOTkxMSAxMi42MTM1IDE0LjkwNTYgMTIuNjk5IDE0LjgwMDEgMTIuNjk5SDE0LjA5NDlDMTQuMDc3NiAxMi42OTkgMTQuMDYwOSAxMi42OTY0IDE0LjA0NSAxMi42OTIyTDE0LjA0MzcgMTIuNjkyTDE0LjA0MjIgMTIuNjkxNkMxNC4wMzc3IDEyLjY5MDMgMTQuMDMzMyAxMi42ODg4IDE0LjAyOSAxMi42ODczTDE0LjAyMyAxMi42ODUxQzE0LjAxOTggMTIuNjgzOSAxNC4wMTY4IDEyLjY4MjYgMTQuMDEzNiAxMi42ODExQzE0LjAxMDUgMTIuNjc5NyAxNC4wMDc1IDEyLjY3ODIgMTQuMDA0NSAxMi42NzY2QzE0LjAwMjUgMTIuNjc1NyAxNC4wMDA3IDEyLjY3NDYgMTMuOTk4OCAxMi42NzM2QzEzLjk5NDggMTIuNjcxMyAxMy45OTA3IDEyLjY2ODkgMTMuOTg2OCAxMi42NjYzTDEzLjk4NDcgMTIuNjY0OEMxMy45NjYgMTIuNjUyMSAxMy45NDkyIDEyLjYzNjIgMTMuOTM1NCAxMi42MTY3TDExLjkzNjEgOS45MTY3NVYxMi41MDhDMTEuOTM2MSAxMi42MTM1IDExLjg1MDYgMTIuNjk5IDExLjc0NTIgMTIuNjk5SDExLjAzNkMxMC45MzA2IDEyLjY5OSAxMC44NDUxIDEyLjYxMzUgMTAuODQ1MSAxMi41MDhWOC4xNDM3NEMxMC44NDUxIDguMDM4MzkgMTAuOTMwNiA3Ljk1MjgxIDExLjAzNiA3Ljk1MjgxSDExLjc0MTJDMTEuNzQzNSA3Ljk1MjgxIDExLjc0NTYgNy45NTMwOSAxMS43NDc5IDcuOTUzMThDMTEuNzUxMyA3Ljk1MzI4IDExLjc1NDYgNy45NTMzNyAxMS43NTggNy45NTM3NUwxMS43NjgzIDcuOTU0ODdMMTEuNzc2NCA3Ljk1NjE4TDExLjc4NzcgNy45NTg2MkwxMS43OTQ2IDcuOTYwNEMxMS43OTg1IDcuOTYxNTMgMTEuODAyMyA3Ljk2Mjc0IDExLjgwNjIgNy45NjQxNUwxMS44MTI0IDcuOTY2NEMxMS44MTYxIDcuOTY3OSAxMS44MTk5IDcuOTY5NDkgMTEuODIzNSA3Ljk3MTE4TDExLjgyOTYgNy45NzQxOEMxMS44MzMyIDcuOTc1OTYgMTEuODM2NyA3Ljk3NzkzIDExLjg0MDEgNy45Nzk5OUwxMS44NDU5IDcuOTgzNDZDMTEuODQ5NSA3Ljk4NTggMTEuODUyOSA3Ljk4ODA1IDExLjg1NjEgNy45OTA0TDExLjg2MTMgNy45OTQyNEMxMS44NjQ5IDcuOTk3MTQgMTEuODY4MiA4LjAwMDA1IDExLjg3MTYgOC4wMDMwNUwxMS44NzUyIDguMDA2MzNDMTEuODc5MiA4LjAxMDA4IDExLjg4MyA4LjAxNDExIDExLjg4NjcgOC4wMTgyM0wxMS44ODc5IDguMDE5NjRDMTEuODkzNCA4LjAyNTgzIDExLjg5ODYgOC4wMzIzOSAxMS45MDMzIDguMDM5MzJMMTMuOSAxMC43MzU5VjguMTQzNzRDMTMuOSA4LjAzODM5IDEzLjk4NTUgNy45NTI4MSAxNC4wOTEgNy45NTI4MVoiIGZpbGw9IiMwMDAwMDAiLz4NCjwvc3ZnPg==" width="6%">
+<a href="https://line.me/ti/p/FE-r4iuK8D">panda55520</a> </span> </span>
+</center>
+</td>
+</tr>
+</tbody></table>
+
+<h2 id="img-srcassetsinfo-circle-solidsvg-width3-關於我"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJpbmZvLWNpcmNsZSIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWluZm8tY2lyY2xlIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMjU2IDhDMTE5LjA0MyA4IDggMTE5LjA4MyA4IDI1NmMwIDEzNi45OTcgMTExLjA0MyAyNDggMjQ4IDI0OHMyNDgtMTExLjAwMyAyNDgtMjQ4QzUwNCAxMTkuMDgzIDM5Mi45NTcgOCAyNTYgOHptMCAxMTBjMjMuMTk2IDAgNDIgMTguODA0IDQyIDQycy0xOC44MDQgNDItNDIgNDItNDItMTguODA0LTQyLTQyIDE4LjgwNC00MiA0Mi00MnptNTYgMjU0YzAgNi42MjctNS4zNzMgMTItMTIgMTJoLTg4Yy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDEydi02NGgtMTJjLTYuNjI3IDAtMTItNS4zNzMtMTItMTJ2LTI0YzAtNi42MjcgNS4zNzMtMTIgMTItMTJoNjRjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYxMDBoMTJjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYyNHoiPjwvcGF0aD48L3N2Zz4=" width="3%">
+關於我</h2>
+<table>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 95%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>個人資料</strong></td>
+<td style="text-align: left;">女，33 歲，居住於新北市三重區</td>
+</tr>
+<tr class="even">
+<td><strong>工作經歷</strong></td>
+<td style="text-align: left;">近 10 年軟體工程師資歷（2015/08 ~
+至今）</td>
+</tr>
+<tr class="odd">
+<td><strong>可上班日</strong></td>
+<td style="text-align: left;">錄取後一個月上班</td>
+</tr>
+<tr class="even">
+<td><strong>希望待遇</strong></td>
+<td style="text-align: left;">面議</td>
+</tr>
+<tr class="odd">
+<td><strong>最高學歷</strong></td>
+<td style="text-align: left;">畢業於元智資工研究所（2013/09 ~
+2015/06）</td>
+</tr>
+<tr class="even">
+<td><strong>相關證照</strong></td>
+<td style="text-align: left;">- 證券商業務員<br>- 期貨商業務員<br>-
+TOEIC 綠色證書（總分 625 分）<br>- 行政院勞委會電腦硬體裝修丙級<br>-
+Microsoft Office Specialist
+Master（Excel/Word/PowerPoint/Outlook）<br></td>
+</tr>
+<tr class="odd">
+<td><strong>工作特質</strong></td>
+<td style="text-align: left;">-
+<u>勇於發掘問題，積極查找根本原因，提出一勞永逸解法，謹慎評估後再⾏動</u>，若遇到無法理解的情況，也會主動發問尋求幫助<br>
+-
+<u>開發程式碼不僅高內聚、低耦合，還要保持可讀性、複用性</u>，使團隊可以輕鬆維護系統，減少改東壞西的錯誤<br>
+-
+<u>喜歡接觸新事物、樂於分享筆記和心得</u>，更喜歡與夥伴們一起討論交流</td>
+</tr>
+</tbody>
+</table>
+<h2 id="img-srcassetsbriefcase-solidsvg-width3-工作經驗"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJicmllZmNhc2UiIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1icmllZmNhc2UgZmEtdy0xNiIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zMjAgMzM2YzAgOC44NC03LjE2IDE2LTE2IDE2aC05NmMtOC44NCAwLTE2LTcuMTYtMTYtMTZ2LTQ4SDB2MTQ0YzAgMjUuNiAyMi40IDQ4IDQ4IDQ4aDQxNmMyNS42IDAgNDgtMjIuNCA0OC00OFYyODhIMzIwdjQ4em0xNDQtMjA4aC04MFY4MGMwLTI1LjYtMjIuNC00OC00OC00OEgxNzZjLTI1LjYgMC00OCAyMi40LTQ4IDQ4djQ4SDQ4Yy0yNS42IDAtNDggMjIuNC00OCA0OHY4MGg1MTJ2LTgwYzAtMjUuNi0yMi40LTQ4LTQ4LTQ4em0tMTQ0IDBIMTkyVjk2aDEyOHYzMnoiPjwvcGF0aD48L3N2Zz4=" width="3%">
+工作經驗</h2>
+<h3 id="統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師">【統一綜合證券股份有限公司
+- 資深專案襄理】C#、Angular 全端網站工程師</h3>
+<h4 id="仍在職2-年-6-個月-">2022/06 ~ 仍在職，2 年 6 個月 +</h4>
+<ul>
+<li>運用 .NET、EF Core、MSSQL <u>擬定後端站台框架</u>與 API
+資料結構</li>
+<li>使用 Tailwind、<u>CSS RWD 切版設計前端站台</u>並自創多款 UI/UX
+元件</li>
+<li><u>導入 E2E 測試</u> Playwright
+減少簽核關卡中不斷登入審核之重複性高的動作</li>
+<li>熱愛研究小工具 Batch、PowerShell
+加速團隊開發；Markdown、Pandoc、PlantUML 快速產出文件</li>
+</ul>
+<h3 id="玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師">【玉山綜合證券股份有限公司
+- 資訊處交易組資深工程師】C# 系統維運工程師</h3>
+<h4 id="年-2-個月">2020/04 ~ 2022/05，2 年 2 個月</h4>
+<ul>
+<li>撰寫 API
+站台串接「玉山銀行餘額查詢」，處理各下單前台每日<u>尖峰時段請求近 60
+萬筆資料</u></li>
+<li>利用 Batch、PowerShell
+<u>自動部署站台</u>，一鍵備份檔案、調整設定檔並更新版本</li>
+<li>負責「複委託中台系統」管理，包含 LB
+伺服器擴充、即時監控、資安控管，及早預防撞庫攻擊</li>
+<li>負責「證 / 期 / 權 / 興 / 複的 Web 和 AP
+下單系統」管理，穩定承載疫情衝擊下市場熱絡的交易量</li>
+</ul>
+<h3 id="奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師">【奇唯科技股份有限公司（精誠）
+- 主任程式設計師】C# 全端軟體工程師</h3>
+<h4 id="年-9-個月">2015/08 ~ 2020/04，4 年 9 個月</h4>
+<ul>
+<li>開發各券商 jQuery、.NET Framework 「交易帳務後台管理站台」，包含
+PDF、Excel、SFTP 等功能</li>
+<li>開發「複委託 FIX 下單交易 Socket」 及 「帳務處理 MSMQ
+核心系統」，<u>橫跨⾄少 13 個交易市場，串接 6
+種以上的下單委託來源</u></li>
+<li>研發「證券下單交易系統」，透過非同步與多執行緒處理風控檢核，模擬驗測<u>委託新單可達到每秒
+1000 筆資料</u></li>
+<li>自主研究小工具 WinForm ⾃動化產生 Table Schema CRUD 程式碼，迅速達成
+UI 與 API 基本設定功能</li>
+</ul>
+<h2 id="img-srcassetsproject-diagram-solidsvg-width3-專案經歷"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJwcm9qZWN0LWRpYWdyYW0iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1wcm9qZWN0LWRpYWdyYW0gZmEtdy0yMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zODQgMzIwSDI1NmMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzNTJjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnpNMTkyIDMyYzAtMTcuNjctMTQuMzMtMzItMzItMzJIMzJDMTQuMzMgMCAwIDE0LjMzIDAgMzJ2MTI4YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoOTUuNzJsNzMuMTYgMTI4LjA0QzIxMS45OCAzMDAuOTggMjMyLjQgMjg4IDI1NiAyODhoLjI4TDE5MiAxNzUuNTFWMTI4aDIyNFY2NEgxOTJWMzJ6TTYwOCAwSDQ4MGMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzMmMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg==" width="3%">
+專案經歷</h2>
+<h3 id="統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師-1">【統一綜合證券股份有限公司
+- 資深專案襄理】C#、Angular 全端網站工程師</h3>
+<h4 id="專案歷程">專案歷程</h4>
+<ul>
+<li>2024/09 ~ 至今【統一證券 - 需求單系統】PM、SA、SD、PG
+<ul>
+<li>專案描述：讓公司全體員工申請提案單與需求單簽核表單，分公司員工遞件提案給業務單位窗口，業務單位窗口確認需求並分派給相關資訊單位，資訊單位再指定相關系統負責人處理，大幅縮減冗長的行政流程作業</li>
+<li>使用技術：C#、Angular、Tailwind、EF
+Core、Migration、Dapper、Markdown、Pandoc、PlantUML、Playwright、Coravel</li>
+<li>工作內容說明：<u>撰寫 PowerShell 與 Batch 腳本快速產製 UI
+站台</u>，創建 UI 專案並安裝相關套件，並搭配腳本產生的 API
+站台迅速完成前後端必備之基礎功能，例如：登入、目錄選單、系統設定檔、系統服務開關等（請見相關附圖一）</li>
+</ul></li>
+<li>2023/06 ~ 至今【統一證券 - 會議記錄系統】PM、SA、SD、PG
+<ul>
+<li>專案描述：主要提供使用者記錄會議內容，回顧過去討論事項，保障雙方決策結果以避免爭議。不僅與會者能夠簽核留下意見，同時副本通知轉寄相關人員；另外不同主管層級也可切換檢視權限，瀏覽所屬員工之會議內容，督促其完成交辦事項</li>
+<li>使用技術：C#、Angular、Tailwind、EF
+Core、Migration、Dapper、Markdown、Pandoc、PlantUML、Playwright、Coravel</li>
+<li>工作內容說明：<u>主動研究 API 站台的排程功能
+Coravel</u>，透過系統設定檔取代 Windows
+工作排程器，降低應用程式部署與維運的困難，將排程操作的主導權掌握在系統管理員手中</li>
+</ul></li>
+<li>2023/05 ~ 至今【統一證券 - 折讓平台系統】PM、SA、SD、PG
+<ul>
+<li>專案描述：提供營業員申請證券顧客的日折及月退簽核作業，優化現有紙本操作轉為線上系統，提升內部作業效率、降低人員作業疏失，未來亦可進行相關數據分析，以利於控管公司整體折讓率</li>
+<li>使用技術：C#、EF
+Core、Migration、Dapper、DB2、Markdown、Pandoc、PlantUML、Playwright</li>
+<li>工作內容說明：<u>撰寫 PowerShell 與 Batch 腳本快速產製 API
+站台</u>，從創建 API 方案到 MSSQL 資料庫建置，一鍵複製 API
+範本與自動化測試範本，甚至可以一鍵產出相關專案時程表樣板、系統規格文件、Table
+Schema 文件、API Spec 文件、上版部署文件等（請見相關附圖二）</li>
+</ul></li>
+<li>2023/01 ~ 2023/05【統一證券 - 開戶表單簽核系統】SA、PG
+<ul>
+<li>專案描述：協助開戶系統串接表單簽核系統舊翻新，包含證 / 期 / 複 /
+債等，共計 8 種不同商品別之開戶表單處理各自不同的關卡審核與邏輯判斷</li>
+<li>使用技術：C#、jQuery、Dapper、Playwright</li>
+<li>工作內容說明：由於各商品開戶表單的關卡邏輯非常多，為了方便驗測各種情境，<u>指導相關維運人員開發撰寫
+E2E 測試 Playwright</u>，減少簽核關卡中不斷登入審核之重複性高的動作</li>
+</ul></li>
+<li>2022/06 ~ 2022/12【統一證券 - 未成年原約存續系統】SA、PG
+<ul>
+<li>專案描述：因應主管機關法規之規定，檢查未成年顧客是否屆齡 18
+歲，開放簽署同意書之站台</li>
+<li>使用技術：C#、Angular、Bootstrap、Linux、DB2</li>
+<li>工作內容說明：<u>首次部署 API 與 UI 網站於 Linux
+作業系統</u>，不僅克服 Apache 改寫網址條件的規則，並與美工合作套入
+Bootstrap 設計樣式</li>
+</ul></li>
+</ul>
+<h4 id="相關附圖">相關附圖</h4>
+<ul>
+<li><p>訂定 UI 底層架構與模板，並導入 RWD
+網站設計，讓網頁也能夠跨裝置瀏覽
+<img src="assets/2024gridrwd.jpg"></p></li>
+<li><p>撰寫 PowerShell 與 Batch 腳本改良公司現行做法，無論 Code First 或
+Database First 皆可快速開發 API 站台
+<img src="assets/2024gen.jpg"></p></li>
+</ul>
+<h3 id="玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師-1">【玉山綜合證券股份有限公司
+- 資訊處交易組資深工程師】C# 系統維運工程師</h3>
+<h4 id="專案歷程-1">專案歷程</h4>
+<ul>
+<li>2020/04 ~ 2022/05【玉山證券 - 複委託中台】OP、PG
+<ul>
+<li>專案描述：提供 8 種下單平台執行複委託交易與帳務查詢，包含港 / 滬 /
+深 / 日 / 美市場（請見相關附圖一）</li>
+<li>使用技術：PowerShell、Load
+Balance、Draw.io、資安控管、即時監控和數據分析</li>
+<li>工作內容說明：
+<ul>
+<li>原複委託中台僅獨立一台伺服器，因展望未來海外市場的願景，故主動統計分析近
+3 年複委託單量，舉證下單平台增長量，積極爭取橫向擴充主機架構計畫，欲導入
+Load Balance
+機制，強化備援機制、預防災難發生，讓顧客換版期間也能夠正常使用</li>
+<li>撰寫資安控管和即時監控的排程，及早預防撞庫攻擊且避免系統逾時問題</li>
+</ul></li>
+</ul></li>
+<li>2020/04 ~ 2022/05【玉山證券 - WEB 下單系統】OP、PG
+<ul>
+<li>專案描述：支援證 / 期 / 權 / 興 / 複的網站下單平台</li>
+<li>使用技術：MVC、PowerShell、Playwright、弱點掃描、滲透測試和移機升級</li>
+<li>工作內容說明：
+<ul>
+<li>經過弱點掃描、滲透測試和移機升級的考驗，每年定期修補資安漏洞，並降低尖峰時段顧客等待問題</li>
+<li><u>建置網頁自動化測試程式</u>，確保廠商交付的程式碼所有功能皆正常，並節省驗證測試時間</li>
+<li><u>撰寫自動部署換版腳本</u>，提高 Load Balance
+多台主機的換版部署速度，並大幅降低手動調整的失誤率</li>
+</ul></li>
+</ul></li>
+<li>2020/04 ~ 2022/05【玉山證券 - AP 下單系統】OP、PG
+<ul>
+<li>專案描述：支援證 / 期 / 權 / 興 / 複的應用程式下單平台</li>
+<li>使用技術：MVC、PowerShell、Markdown、弱點掃描、滲透測試和移機升級</li>
+<li>工作內容說明：
+<ul>
+<li>隨著交易量劇增、個股資訊日益增多，移機升級多台 Load Balance
+主機、每週定時重啟和自動載入 Always Running 伺服器站台，加強伺服器站台的
+WAF 防護和 TLS 1.2 加密連線，兼顧保障顧客看盤品質及其隱私安全性</li>
+<li>因應業管需求和上級機關規定，必須確認前 / 中 /
+後台的流程與解法，擔任多方溝通居中協調的角色，以利專案推進且如期上線</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="相關附圖-1">相關附圖</h4>
+<ul>
+<li>透過 draw.io 繪製複委託中台的各市場開收盤時間與預約單時間
+<img src="assets/2020market.jpg"></li>
+</ul>
+<h3 id="奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師-1">【奇唯科技股份有限公司（精誠）
+- 主任程式設計師】C# 全端軟體工程師</h3>
+<h4 id="專案歷程-2">專案歷程</h4>
+<ul>
+<li>2018/01 ~ 2020/04【台新證券 - 複委託交易帳務系統】SA、SD、PG
+<ul>
+<li>專案描述：團隊開發一交易帳務系統，包含證券、債券兩種商品，橫跨至少
+13 個交易市場，串接 6
+種以上的下單委託來源，讓顧客可以跨行交割投資所有市場，並由系統自動匯整交易明細、結算扣付款金額</li>
+<li>使用技術：C#、TFS、MSMQ、Socket、Windows Service</li>
+<li>工作內容說明：<u>負責後台管理系統（請見相關附圖一）、核心交易帳務系統（MSMQ、Socket）與圈存服務（Windows
+Service）</u>，並架設 SFTP Server</li>
+</ul></li>
+<li>2017/06 ~ 2017/09【交帳雲 - 國內交易系統】PG
+<ul>
+<li>專案描述：為了提升下單交易的速度，團隊計畫細分為四大系統，分別是收單系統、下單檢核系統、FIX
+主機連線系統、回報系統，針對每個階段優化效能，模擬測試委託新單可以達到約每秒
+1000 筆</li>
+<li>使用技術：C#、TFS、Multi Thread、Async Await、UnitTest</li>
+<li>工作內容說明：把關每一筆委託單的防呆和風控檢核、<u>撰寫非同步且多執行緒的程式、並建立單元測試以驗證結果是否符合預期</u></li>
+</ul></li>
+<li>2017/02 ~ 2017/11【櫃買中心 - 證券商稽核管理業務資料庫系統】PG
+<ul>
+<li>專案描述：跨部門合作開發一稽核系統，管理證券商查核資料並彙整內外部查核結果，前台可以將檔案上傳下載到網路磁碟機，並匯入匯出資料至圖檔、壓縮檔或報表</li>
+<li>使用技術：C#、TortoiseSVN、PDF、ZIP、Excel及網路磁碟機底層</li>
+<li>工作內容說明：<u>加入 API、SQL、PDF、ZIP、Excel、網路磁碟機…
+等多種底層架構和類別</u>，讓開發人員只需繼承相對應的底層或引用類別函式庫，再修改商業邏輯即可快速完成新功能</li>
+</ul></li>
+<li>2016/07 ~ 2017/02【第一銀行 - 複委託帳務系統】PG
+<ul>
+<li>專案描述：團隊開發一帳務管理系統，匯入多家海外上手券商提供的媒體檔並轉成保銀特定格式的交割檔案，並且產出客製化的內部管理報表</li>
+<li>使用技術：HTML、JS、jQuery、C#、TFS</li>
+<li>工作內容說明：不僅撰寫<u>自動化產生程式碼的工具（請見相關附圖二），加速開發
+DB Table CRUD API，減少 Bug 錯誤率</u>，另外還架設 FTP
+Server，並透過後台處理 txt/csv/xls/xml 等多種格式的轉入轉出檔案</li>
+</ul></li>
+<li>2015/09 ~ 2016/07【國際通證券 - 台星通】PG
+<ul>
+<li>專案描述：團隊開發一中介機構交易平台，讓玉山證券和中國信託證券的投資人可以透過台星通直接下單到新加坡集中市場</li>
+<li>使用技術：HTML、JS、jQuery、C#、TFS</li>
+<li>工作內容說明：主要負責基本檔設定的查詢、新增、修改及刪除功能，前台透過
+HTML、JavaScript 和 jQuery（AJAX）傳送資料至後端，防範 SQL Injection
+寫入 MS SQL 資料庫，，並重構整理函式與程式碼，提高程式可讀性</li>
+</ul></li>
+</ul>
+<h4 id="相關附圖-2">相關附圖</h4>
+<ul>
+<li><p>台新證券的複委託交易帳務系統，加入網頁定時器監控核心程式
+<img src="assets/2018monitor.jpg"></p></li>
+<li><p>自創 DB Table CRUD API 與 UI 的 WinForm 小工具
+<img src="assets/2018tool.jpg"></p></li>
+</ul>
+<h2 id="img-srcassetstools-solidsvg-width3-技能清單"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJ0b29scyIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXRvb2xzIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTAxLjEgMzk1LjdMMzg0IDI3OC42Yy0yMy4xLTIzLjEtNTcuNi0yNy42LTg1LjQtMTMuOUwxOTIgMTU4LjFWOTZMNjQgMCAwIDY0bDk2IDEyOGg2Mi4xbDEwNi42IDEwNi42Yy0xMy42IDI3LjgtOS4yIDYyLjMgMTMuOSA4NS40bDExNy4xIDExNy4xYzE0LjYgMTQuNiAzOC4yIDE0LjYgNTIuNyAwbDUyLjctNTIuN2MxNC41LTE0LjYgMTQuNS0zOC4yIDAtNTIuN3pNMzMxLjcgMjI1YzI4LjMgMCA1NC45IDExIDc0LjkgMzFsMTkuNCAxOS40YzE1LjgtNi45IDMwLjgtMTYuNSA0My44LTI5LjUgMzcuMS0zNy4xIDQ5LjctODkuMyAzNy45LTEzNi43LTIuMi05LTEzLjUtMTIuMS0yMC4xLTUuNWwtNzQuNCA3NC40LTY3LjktMTEuM0wzMzQgOTguOWw3NC40LTc0LjRjNi42LTYuNiAzLjQtMTcuOS01LjctMjAuMi00Ny40LTExLjctOTkuNi45LTEzNi42IDM3LjktMjguNSAyOC41LTQxLjkgNjYuMS00MS4yIDEwMy42bDgyLjEgODIuMWM4LjEtMS45IDE2LjUtMi45IDI0LjctMi45em0tMTAzLjkgODJsLTU2LjctNTYuN0wxOC43IDQwMi44Yy0yNSAyNS0yNSA2NS41IDAgOTAuNXM2NS41IDI1IDkwLjUgMGwxMjMuNi0xMjMuNmMtNy42LTE5LjktOS45LTQxLjYtNS02Mi43ek02NCA0NzJjLTEzLjIgMC0yNC0xMC44LTI0LTI0IDAtMTMuMyAxMC43LTI0IDI0LTI0czI0IDEwLjcgMjQgMjRjMCAxMy4yLTEwLjcgMjQtMjQgMjR6Ij48L3BhdGg+PC9zdmc+" width="3%">
+技能清單</h2>
+<ul>
+<li>後端相關：C#、ASP.NET、MVC、EF
+Core、Migration、Dapper、Playwright、WebForm、WinForm</li>
+<li>前端相關：HTML、CSS、RWD、jQuery、JavaScript、Angular、TypeScript、Tailwind、Bootstrap</li>
+<li>資料庫相關：MS SQL、DB2</li>
+<li>版控工具：Git、TFS、Sourcetree、TortoiseSVN</li>
+<li>維運工具：Batch、PowerShell</li>
+<li>文書工具：MS Office、Markdown、Pandoc、PlantUML、draw.io、Xmind</li>
+<li>開發工具：Visual Studio、Visual Studio Code</li>
+<li>作業系統：Windows Server、Linux</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#許竹君-resume" class="md-toc-link"><p>許竹君 Resume</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetsusersvg-width3-簡介" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gU3ZnIFZlY3RvciBJY29ucyA6IGh0dHA6Ly93d3cub25saW5ld2ViZm9udHMuY29tL2ljb24gLS0+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjU2IDI1NiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8bWV0YWRhdGE+IFN2ZyBWZWN0b3IgSWNvbnMgOiBodHRwOi8vd3d3Lm9ubGluZXdlYmZvbnRzLmNvbS9pY29uIDwvbWV0YWRhdGE+DQo8Zz48Zz48Zz48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTE3LjYsMTEuNWMtMjUuMiwzLjktNDEsMjIuNi00Myw1MC43Yy0wLjQsNC41LTAuNCw0LjgtMS45LDUuN2MtNi4xLDQtNy40LDE3LjMtMi42LDI3LjFjMS42LDMuMyw1LjIsNi43LDcuNiw3LjFjMS42LDAuMywxLjksMC42LDIuNCwyLjVjOC4xLDMxLjIsMTguMiw0NC40LDM3LjQsNDguN2M1LjUsMS4yLDE2LjgsMS4xLDIyLjEtMC4zYzE2LjYtNC4zLDI2LjgtMTcuNSwzNC4zLTQzLjlsMi03aDIuNGM2LjIsMC4xLDExLjEtNy44LDExLjYtMTguNmMwLjQtOC4zLTEuNy0xNC4xLTUuNy0xNmMtMS44LTAuOC0xLjgtMS0xLjgtMy42YzAtMy45LTAuOS0xMC0yLjEtMTQuOGMtNS0xOS4xLTE4LjktMzIuNi0zNy43LTM2LjhDMTM3LjgsMTEuMiwxMjIuMiwxMC43LDExNy42LDExLjV6Ii8+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTE3MC4zLDE2My40Yy00LjUsMS40LTUuNSwyLjgtMjMsMzIuOWMtOSwxNS42LTE2LjksMjktMTcuNSwyOS43Yy0xLjIsMS43LTEuOCwxLjgtMy4yLDAuM2MtMC42LTAuNi04LjYtMTMuOC0xNy44LTI5LjJjLTExLjQtMTkuMi0xNy4zLTI4LjctMTguNy0yOS45Yy0zLTIuOC01LjMtMy44LTguOS0zLjdjLTIuNywwLTMuOCwwLjUtOS41LDMuNGMtNi43LDMuNS0xMy4zLDYtMjUuNyw5LjljLTE4LjMsNS43LTI4LDEyLjItMzIuNywyMS44Yy0yLjksNS44LTMuNCw5LjEtMy40LDIyLjljMCwxMy41LDAuMywxNS4yLDMuNCwxOC43YzEsMS4xLDIuOSwyLjcsNC40LDMuNGwyLjcsMS4zSDEyOGgxMDcuNmwyLjctMS4zYzMtMS41LDUuNC00LDYuOC03YzAuOC0xLjgsMS0zLjYsMS0xNC45YzAtMTEuMS0wLjItMTMuMy0xLTE2LjhjLTEuOS03LjctNi40LTEzLjktMTMuMy0xOC40Yy01LjctMy44LTEyLjItNi41LTI3LjgtMTEuNWMtNy41LTIuNC0xNi4zLTYuMS0yMi41LTkuNEMxNzYuNiwxNjIuOSwxNzMuOCwxNjIuMywxNzAuMywxNjMuNHoiLz48L2c+PC9nPjwvZz4NCjwvc3ZnPg==" width="3%"> 簡介</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetsinfo-circle-solidsvg-width3-關於我" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJpbmZvLWNpcmNsZSIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWluZm8tY2lyY2xlIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMjU2IDhDMTE5LjA0MyA4IDggMTE5LjA4MyA4IDI1NmMwIDEzNi45OTcgMTExLjA0MyAyNDggMjQ4IDI0OHMyNDgtMTExLjAwMyAyNDgtMjQ4QzUwNCAxMTkuMDgzIDM5Mi45NTcgOCAyNTYgOHptMCAxMTBjMjMuMTk2IDAgNDIgMTguODA0IDQyIDQycy0xOC44MDQgNDItNDIgNDItNDItMTguODA0LTQyLTQyIDE4LjgwNC00MiA0Mi00MnptNTYgMjU0YzAgNi42MjctNS4zNzMgMTItMTIgMTJoLTg4Yy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDEydi02NGgtMTJjLTYuNjI3IDAtMTItNS4zNzMtMTItMTJ2LTI0YzAtNi42MjcgNS4zNzMtMTIgMTItMTJoNjRjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYxMDBoMTJjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnYyNHoiPjwvcGF0aD48L3N2Zz4=" width="3%"> 關於我</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#img-srcassetsbriefcase-solidsvg-width3-工作經驗" class="md-toc-link"><p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJicmllZmNhc2UiIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1icmllZmNhc2UgZmEtdy0xNiIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zMjAgMzM2YzAgOC44NC03LjE2IDE2LTE2IDE2aC05NmMtOC44NCAwLTE2LTcuMTYtMTYtMTZ2LTQ4SDB2MTQ0YzAgMjUuNiAyMi40IDQ4IDQ4IDQ4aDQxNmMyNS42IDAgNDgtMjIuNCA0OC00OFYyODhIMzIwdjQ4em0xNDQtMjA4aC04MFY4MGMwLTI1LjYtMjIuNC00OC00OC00OEgxNzZjLTI1LjYgMC00OCAyMi40LTQ4IDQ4djQ4SDQ4Yy0yNS42IDAtNDggMjIuNC00OCA0OHY4MGg1MTJ2LTgwYzAtMjUuNi0yMi40LTQ4LTQ4LTQ4em0tMTQ0IDBIMTkyVjk2aDEyOHYzMnoiPjwvcGF0aD48L3N2Zz4=" width="3%"> 工作經驗</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師" class="md-toc-link"><p>【統一綜合證券股份有限公司 - 資深專案襄理】C#、Angular 全端網站工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#仍在職2-年-6-個月-" class="md-toc-link">
+            <p>2022/06 ~ 仍在職，2 年 6 個月 +</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師" class="md-toc-link"><p>【玉山綜合證券股份有限公司 - 資訊處交易組資深工程師】C# 系統維運工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#年-2-個月" class="md-toc-link">
+            <p>2020/04 ~ 2022/05，2 年 2 個月</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師" class="md-toc-link"><p>【奇唯科技股份有限公司（精誠） - 主任程式設計師】C# 全端軟體工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#年-9-個月" class="md-toc-link">
+            <p>2015/08 ~ 2020/04，4 年 9 個月</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#img-srcassetsproject-diagram-solidsvg-width3-專案經歷" class="md-toc-link"><p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJwcm9qZWN0LWRpYWdyYW0iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1wcm9qZWN0LWRpYWdyYW0gZmEtdy0yMCIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zODQgMzIwSDI1NmMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzNTJjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnpNMTkyIDMyYzAtMTcuNjctMTQuMzMtMzItMzItMzJIMzJDMTQuMzMgMCAwIDE0LjMzIDAgMzJ2MTI4YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoOTUuNzJsNzMuMTYgMTI4LjA0QzIxMS45OCAzMDAuOTggMjMyLjQgMjg4IDI1NiAyODhoLjI4TDE5MiAxNzUuNTFWMTI4aDIyNFY2NEgxOTJWMzJ6TTYwOCAwSDQ4MGMtMTcuNjcgMC0zMiAxNC4zMy0zMiAzMnYxMjhjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmgxMjhjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlYzMmMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg==" width="3%"> 專案經歷</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#統一綜合證券股份有限公司---資深專案襄理c-angular-全端網站工程師-1" class="md-toc-link"><p>【統一綜合證券股份有限公司 - 資深專案襄理】C#、Angular 全端網站工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#玉山綜合證券股份有限公司---資訊處交易組資深工程師c-系統維運工程師-1" class="md-toc-link"><p>【玉山綜合證券股份有限公司 - 資訊處交易組資深工程師】C# 系統維運工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程-1" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖-1" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#奇唯科技股份有限公司精誠---主任程式設計師c-全端軟體工程師-1" class="md-toc-link"><p>【奇唯科技股份有限公司（精誠） - 主任程式設計師】C# 全端軟體工程師</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#專案歷程-2" class="md-toc-link">
+            <p>專案歷程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相關附圖-2" class="md-toc-link">
+            <p>相關附圖</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#img-srcassetstools-solidsvg-width3-技能清單" class="md-toc-link">
+            <p><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJ0b29scyIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXRvb2xzIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTAxLjEgMzk1LjdMMzg0IDI3OC42Yy0yMy4xLTIzLjEtNTcuNi0yNy42LTg1LjQtMTMuOUwxOTIgMTU4LjFWOTZMNjQgMCAwIDY0bDk2IDEyOGg2Mi4xbDEwNi42IDEwNi42Yy0xMy42IDI3LjgtOS4yIDYyLjMgMTMuOSA4NS40bDExNy4xIDExNy4xYzE0LjYgMTQuNiAzOC4yIDE0LjYgNTIuNyAwbDUyLjctNTIuN2MxNC41LTE0LjYgMTQuNS0zOC4yIDAtNTIuN3pNMzMxLjcgMjI1YzI4LjMgMCA1NC45IDExIDc0LjkgMzFsMTkuNCAxOS40YzE1LjgtNi45IDMwLjgtMTYuNSA0My44LTI5LjUgMzcuMS0zNy4xIDQ5LjctODkuMyAzNy45LTEzNi43LTIuMi05LTEzLjUtMTIuMS0yMC4xLTUuNWwtNzQuNCA3NC40LTY3LjktMTEuM0wzMzQgOTguOWw3NC40LTc0LjRjNi42LTYuNiAzLjQtMTcuOS01LjctMjAuMi00Ny40LTExLjctOTkuNi45LTEzNi42IDM3LjktMjguNSAyOC41LTQxLjkgNjYuMS00MS4yIDEwMy42bDgyLjEgODIuMWM4LjEtMS45IDE2LjUtMi45IDI0LjctMi45em0tMTAzLjkgODJsLTU2LjctNTYuN0wxOC43IDQwMi44Yy0yNSAyNS0yNSA2NS41IDAgOTAuNXM2NS41IDI1IDkwLjUgMGwxMjMuNi0xMjMuNmMtNy42LTE5LjktOS45LTQxLjYtNS02Mi43ek02NCA0NzJjLTEzLjIgMC0yNC0xMC44LTI0LTI0IDAtMTMuMyAxMC43LTI0IDI0LTI0czI0IDEwLjcgMjQgMjRjMCAxMy4yLTEwLjcgMjQtMjQgMjR6Ij48L3BhdGg+PC9zdmc+" width="3%"> 技能清單</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
