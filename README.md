@@ -1,3 +1,27 @@
+---
+# 1. 安裝pandoc https://pandoc.org/installing.html
+# 2. 透過命令提示字元轉換 Markdown檔 至 Word檔
+# pandoc -f markdown -t docx -o ReadMe.docx ReadMe.md --toc --variable=--toc-title:"目錄" --lua-filter="./Template/pagebreak.lua" --reference-doc="./Template/reference.docx"
+# 3. 透過命令提示字元轉換 Word檔 至 Markdown檔
+# pandoc -f docx -t gfm -o ReadMe.md ReadMe.docx
+
+title: "許竹君 Resume"
+# html:
+#   toc: true
+# chrome:
+#   printBackground: true
+# output:
+#   word_document:
+#     toc: false
+#     pandoc_args:
+#       [
+#         "--lua-filter=./Template/pagebreak.lua",
+#         "--reference-doc=./Template/reference.docx",
+#       ]
+# toc-title: "目錄"
+# 倘若遇到編碼問題，記得 VSCode > F1 > Change File Encoding > Save with Encoding > UTF8
+---
+
 # 許竹君 Resume
 
 [TOC]
@@ -48,7 +72,7 @@
 | **希望待遇** | 面議                                                                                                                                                                          |
 | **最高學歷** | 畢業於元智資工研究所（2013/09 \~ 2015/06）                                                                                                                                              |
 | **相關證照** | - 證券商業務員<br>- 期貨商業務員<br>- TOEIC 綠色證書（總分 625 分）<br>- 行政院勞委會電腦硬體裝修丙級<br>- Microsoft Office Specialist Master（Excel/Word/PowerPoint/Outlook）<br>                               |
-| **工作特質** | - <u>勇於發掘問題，積極查找根本原因，提出一勞永逸解法，謹慎評估後再⾏動</u>，若遇到無法理解的情況，也會主動發問尋求幫助<br> - <u>開發程式碼不僅高內聚、低耦合，還要保持可讀性、複用性</u>，使團隊可以輕鬆維護系統，減少改東壞西的錯誤<br> - <u>喜歡接觸新事物、樂於分享筆記和心得</u>，更喜歡與夥伴們一起討論交流 |
+| **工作特質** | - <u>勇於發掘問題，積極查找根本原因，提出一勞永逸解法，謹慎評估後再⾏動</u>，但若遇到無法理解的情況，也會主動發問尋求幫助<br> - <u>開發程式碼不僅高內聚、低耦合，還要保持可讀性、複用性</u>，使團隊可以輕鬆維護系統，減少改東壞西的錯誤<br> - <u>喜歡接觸新事物、樂於分享筆記和心得</u>，更喜歡與夥伴們一起討論交流 |
 
 ## <img src="assets/briefcase-solid.svg" width="3%"> 工作經驗
 
